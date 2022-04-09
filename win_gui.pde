@@ -53,6 +53,11 @@ cp5.addButton("M5A")  //The button
     .setPosition(340, 160)  //x and y coordinates of upper left corner of button
     .setSize(50, 50)      //(width, height)
   ;  
+  
+cp5.addButton("stop")  //The button
+    .setPosition(410, 130)  //x and y coordinates of upper left corner of button
+    .setSize(50, 50)      //(width, height)
+  ;  
 
 }
 
@@ -84,30 +89,35 @@ void M2A(){
   
   void M3C(){
   
-  port.write('A');
+  port.write('E');
   
 }
 void M3A(){
   
-  port.write('B');
+  port.write('F');
   
 }
 void M4C(){
   
-  port.write('C');
+  port.write('G');
   
 }
 void M4A(){
   
-  port.write('D');
+  port.write('H');
 }
   void M5C(){
   
-  port.write('C');
+  port.write('I');
   
 }
 void M5A(){
   
-  port.write('D');
+  port.write('J');
+  
+}
+void stop(){
+  
+  port.write('K');
   
 }

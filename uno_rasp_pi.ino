@@ -167,6 +167,15 @@ void loop() {
                                                     digitalWrite(M5driverPUL,LOW);
                                                     delay(waitInMilliseconds);
                                                     }
-                                                }   
+                                                }
+                                                   else if (c=='K')
+                                                   {
+                                                    Serial.println("motor stop"); 
+                                                    digitalWrite(M1driverPUL,LOW);
+                                                    digitalWrite(M2driverPUL,LOW);
+                                                    digitalWrite(M3driverPUL,LOW);
+                                                    digitalWrite(M4driverPUL,LOW);
+                                                    digitalWrite(M5driverPUL,LOW);
+                                                   }
 }
 }
